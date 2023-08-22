@@ -1,0 +1,16 @@
+{% extends 'heritage.html.twig' %}
+
+
+ {% block TitreDuDOcument %}
+   
+      Nouveau titre 
+
+{% endblock %}
+
+{% block corpDuDocument %}
+
+{{ parent() }}
+   
+       Twig c'est manifique
+
+   {% endblock %}

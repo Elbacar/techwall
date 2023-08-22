@@ -1,0 +1,76 @@
+
+{% extends 'template.html.twig' %}
+
+{% block body %}
+    
+
+    {% include 'fragments/dateJour.html.twig' %}
+
+    <div class = "alert alert-warning" href="{{ path('app_tab' , {nb : 7} )}}"> 
+    <a href="{{ path('app_tab' , {nb : 7} )}}">
+     table des notes
+    </a> 
+      </div>
+    <table class ="table">
+    
+    <tr class ="table-active">
+           <td>FirstName</td>
+           <td>Name</td>
+           <td>Age</td>
+           <td>Message</td>
+    </tr>
+    {% for user in users %}
+    
+    <tr class = "table-{% if loop.index is odd %}danger{% else %}warning{% endif %}">
+        <td>{{ user.firstName}}</td>
+        <td>{{ user.name}}</td>
+        <td>{{ user.age  }}</td>
+        <td>{{ render ( controller ('App\\Controller\\FirstController::sayhello', { firstName: user.firstName , name: user.name} ))  }}</td>
+    </tr>
+    {%  endfor %}
+    </table>
+   
+   
+ 
+{% endblock %}
+
+
+
+{% block pagetitle %}
+
+Users
+    
+{% endblock %}
+
+https://mixkit.co/free-stock-video/sad-businessman-talking-head-on-4634/
+upset
+
+https://mixkit.co/free-stock-video/colored-hourglasses-and-school-supplies-12408/ 
+pens
+
+https://mixkit.co/free-stock-video/school-supplies-concept-18768/
+pens
+
+https://www.videvo.net/video/education-concept-2/1103455/
+school supplies
+
+https://www.videvo.net/video/overhead-shot-of-man-writing-revision-cards/1011845/
+list
+
+https://mixkit.co/free-stock-video/parcel-delivery-man-making-a-confident-gesture-31139/
+delivery
+
+https://mixkit.co/free-stock-video/slowly-approaching-a-clock-on-a-black-background-28897/
+time wasting
+
+https://mixkit.co/free-stock-video/a-man-lying-on-the-bed-scrolling-on-his-phone-13168/
+relaxing at home
+
+https://www.pexels.com/fr-fr/photo/signe-nombres-shopping-affaires-5650026/
+discount 
+
+https://mixkit.co/free-stock-video/man-counting-a-wad-of-bills-seen-very-closely-18296/
+counting money 
+
+https://www.videvo.net/video/close-up-of-muslim-man-at-home-holding-mobile-phone-and-scrolling-1/2587800/
+contact us 

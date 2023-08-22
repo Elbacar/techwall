@@ -192,7 +192,7 @@ class TodoController extends AbstractController
 
 
  #[Route('/multip/{a</d+>}/{b</d+>}', name: 'app_multiplicationTodo')]
- // 'a' => '/d+' pour ces expressions regulieres on peut utiliser le site : 
+ // 'a' => '/d+' pour ces expressions regulieres on peut utiliser le site : RegExr  
     public function multiplication ($a , $b) : Response 
 
     {
